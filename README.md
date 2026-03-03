@@ -28,3 +28,9 @@ sudo apt update
 sudo apt install docker.io docker-compose -y
 sudo systemctl enable docker
 sudo systemctl start docker
+
+
+
+Docker ps - check how many continers are used 
+docker-compose logs api -  to check api logs
+docker logs CONTAINER ID
