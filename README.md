@@ -22,3 +22,9 @@ total 8
 drwxr-xr-x 4 root root 4096 Mar  3 12:19 EmployeeManagementSystem_Full_Project
 root@ip-172-31-15-31:/home/ubuntu/Kirantest# git remote set-url origin https://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@github.com/naveenthammu/Kirantest.git
 root@ip-172-31-15-31:/home/ubuntu/Kirantest# 
+
+
+sudo apt update
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable docker
+sudo systemctl start docker
