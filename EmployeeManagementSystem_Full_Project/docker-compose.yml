@@ -12,6 +12,7 @@ services:
 
   api:
     build: ./MyApp.API
+    container_name: api
     depends_on:
       - sqlserver
     ports:
