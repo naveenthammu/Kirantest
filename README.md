@@ -14,6 +14,7 @@ GitHub -> Settings -> Developer Settings -> Personal access tokens (classic). Cl
 
 Format: git remote set-url origin https://<TOKEN>@github.com/<USER>/<REPO>.git
 git remote set-url origin https://----------@github.com/naveenthammu/Kirantest.git
+git remote set-url origin https://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@github.com/naveenthammu/Kirantest.git
 
 Example:
 root@ip-172-31-15-31:/home/ubuntu/Kirantest# ls -ltr 
@@ -34,3 +35,18 @@ sudo systemctl start docker
 Docker ps - check how many continers are used 
 docker-compose logs api -  to check api logs
 docker logs CONTAINER ID
+
+now enbale port 5000 on AWS security groups 
+
+To start backend services 
+
+docker-compose down
+docker-compose build --no-cache
+docker-compose up
+
+
+------------------------------------
+
+Frontend fix:
+
+
