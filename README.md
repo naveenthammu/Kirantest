@@ -19,19 +19,31 @@ git remote set-url origin https://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@githu
 to unset the Credential
 git config --global --unset credential.helper
 
+Dotnet install 
+-------------
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-10.0
 
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Swashbuckle.AspNetCore
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet list package
+
+
+Docker install
+-------------
 sudo apt update
 sudo apt install docker.io docker-compose -y
 sudo systemctl enable docker
 sudo systemctl start docker
 
-
-
 Docker ps - check how many continers are used 
 docker-compose logs api -  to check api logs
 docker logs CONTAINER ID
 
-now enbale port 5000 on AWS security groups 
+now enable port 5000 on AWS security groups 
 
 To start backend services 
 
@@ -44,6 +56,17 @@ docker-compose up
 
 Frontend fix:
 
+Install NPM
+------------
+sudo apt update
+sudo apt install nodejs npm
 
-
-
+cd EmployeeManagementSystem_Full_Project/myapp-frontend
+npm install
+npm install axios
+npm install react-router-dom
+npm install @mui/material
+npm install @emotion/react
+npm install @emotion/styled
+npm install concurrently
+npm install dotenv
